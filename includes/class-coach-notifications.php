@@ -85,9 +85,7 @@ class Coach_Notification {
 							// email content for assignments.
 							if ( ! empty( $assignments ) ) {
 								// initial content for assignments content.
-								$message .= "<p style='margin-bottom:15px'>Some writing assignments were submitted by your students.
-								If this students are assigned to you, please visit <strong>Assignment Review</strong> tab in your Coach Dashboard, and access the student's document via link provided.
-								After you have left your feedback please mark that document as <strong>Reviewed</strong> in the portal </p>";
+								$message .= "<p style='margin-bottom:15px'>New assignments have been submitted for review by users in your Coaching Circle.</p>";
 
 								$message .= "<div style='margin-bottom: 40px;'>";
 								$message .= "<table class='td' cellspacing='0' cellpadding='6' style='width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;' border='1'>";
@@ -119,9 +117,7 @@ class Coach_Notification {
 							// email content for google docs.
 							if ( ! empty( $google_docs ) ) {
 								// initial content for docs.
-								$message .= "<p style='margin-bottom:15px'>Some documents were submitted by your students.
-								If this students are assigned to you, please visit <strong>Document Review</strong> tab in your Coach Dashboard, and access the student's document via link provided.
-								After you have left your feedback please mark that document as <strong>Reviewed</strong> in the portal </p>";
+								$message .= "<p style='margin-bottom:15px'>New documents have been submitted for review by users in your Coaching Circle.</p>";
 
 								$message .= "<div style='margin-bottom: 40px;'>";
 								$message .= "<table class='td' cellspacing='0' cellpadding='6' style='width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;' border='1'>";

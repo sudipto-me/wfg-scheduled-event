@@ -91,7 +91,8 @@ class WFG_Scheduled_Event {
 	 */
 	public function activate_plugin() {
 		if ( ! wp_next_scheduled( 'coach_daily_docs_assignment_notification' ) ) {
-			wp_schedule_event( time(), 'daily', 'coach_daily_docs_assignment_notification' );
+			$tomorrow_timestamp = strtotime('tomorrow 08:00:00 America/New_York');
+			wp_schedule_event( $tomorrow_timestamp, 'daily', 'coach_daily_docs_assignment_notification' );
 		}
 	}
 
